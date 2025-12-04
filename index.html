@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025년 생성형 AI 오픈소스 생태계</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">🤖</span>
+                <span>AI OpenSource 2025</span>
+            </a>
+            <button class="nav-toggle" aria-label="메뉴 토글">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#intro" class="nav-link">서론</a></li>
+                <li><a href="#models" class="nav-link">모델 비교</a></li>
+                <li><a href="#infrastructure" class="nav-link">인프라</a></li>
+                <li><a href="#agentic" class="nav-link">에이전틱 AI</a></li>
+                <li><a href="#governance" class="nav-link">거버넌스</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <span class="hero-badge">2025년 12월 기준</span>
+            <h1 class="hero-title">
+                생성형 AI<br>
+                <span class="gradient-text">오픈소스 생태계</span>
+            </h1>
+            <p class="hero-subtitle">
+                모델 중심에서 시스템 중심으로의 대전환<br>
+                실무 활용 전략 가이드
+            </p>
+            <div class="hero-cta">
+                <a href="#intro" class="btn btn-primary">시작하기</a>
+                <a href="#models" class="btn btn-secondary">모델 비교</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>스크롤</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="intro" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Introduction</span>
+                <h2 class="section-title">시스템 중심 AI 시대의 도래</h2>
+            </div>
+            <div class="intro-grid">
+                <div class="intro-card" data-aos="fade-up">
+                    <div class="intro-icon">📊</div>
+                    <h3>Model-Centric (2023-2024)</h3>
+                    <p>"어떤 모델이 가장 성능이 좋은가"</p>
+                    <p class="intro-desc">파라미터 사이즈 경쟁, 단순 벤치마크 비교</p>
+                </div>
+                <div class="intro-arrow">→</div>
+                <div class="intro-card highlight" data-aos="fade-up" data-aos-delay="200">
+                    <div class="intro-icon">⚙️</div>
+                    <h3>System-Centric (2025)</h3>
+                    <p>"어떻게 효율적으로 연결하고 제어할 것인가"</p>
+                    <p class="intro-desc">MoE 아키텍처, 에이전틱 워크플로우, 규제 대응</p>
+                </div>
+            </div>
+
+            <div class="key-points">
+                <h3 class="key-points-title">핵심 키워드</h3>
+                <div class="keyword-tags">
+                    <span class="tag">효율성 (Efficiency)</span>
+                    <span class="tag">추론 능력 (Reasoning)</span>
+                    <span class="tag">MoE 아키텍처</span>
+                    <span class="tag">시스템 2 사고</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Models Section -->
+    <section id="models" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Models</span>
+                <h2 class="section-title">2025년 주요 오픈소스 모델</h2>
+                <p class="section-desc">오픈 웨이트 모델들이 클로즈드 소스 모델과 대등한 성능에 도달</p>
+            </div>
+
+            <!-- Model Cards -->
+            <div class="model-grid">
+                <!-- Llama 4 -->
+                <div class="model-card" data-aos="fade-up">
+                    <div class="model-header llama">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Meta_Platforms_Inc._logo.svg/200px-Meta_Platforms_Inc._logo.svg.png" alt="Meta" class="model-logo" onerror="this.style.display='none'">
+                        <span class="model-company">Meta</span>
+                    </div>
+                    <h3 class="model-name">Llama 4</h3>
+                    <p class="model-tagline">네이티브 멀티모달 & 초장문 컨텍스트</p>
+
+                    <div class="model-variants">
+                        <div class="variant">
+                            <h4>Scout</h4>
+                            <ul>
+                                <li><strong>파라미터:</strong> 109B (활성 17B)</li>
+                                <li><strong>컨텍스트:</strong> 10M 토큰</li>
+                                <li>단일 서버 노드 구동 가능</li>
+                            </ul>
+                        </div>
+                        <div class="variant">
+                            <h4>Maverick</h4>
+                            <ul>
+                                <li><strong>파라미터:</strong> 400B (활성 17B)</li>
+                                <li><strong>전문가:</strong> 128개</li>
+                                <li>GPT-4o, Gemini 2.0 상회</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="model-badge">커뮤니티 라이선스</div>
+                </div>
+
+                <!-- DeepSeek -->
+                <div class="model-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="model-header deepseek">
+                        <span class="model-company">DeepSeek</span>
+                    </div>
+                    <h3 class="model-name">DeepSeek-V3 / R1</h3>
+                    <p class="model-tagline">수학 & 코딩 특화 추론 모델</p>
+
+                    <div class="model-stats">
+                        <div class="stat">
+                            <span class="stat-value">671B</span>
+                            <span class="stat-label">전체 파라미터</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">37B</span>
+                            <span class="stat-label">활성 파라미터</span>
+                        </div>
+                    </div>
+
+                    <div class="model-features">
+                        <span class="feature">지식 증류</span>
+                        <span class="feature">Chain of Thought</span>
+                        <span class="feature">내부 논리 검증</span>
+                    </div>
+                    <div class="model-badge mit">MIT 라이선스</div>
+                </div>
+
+                <!-- Qwen 3 -->
+                <div class="model-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="model-header qwen">
+                        <span class="model-company">Alibaba</span>
+                    </div>
+                    <h3 class="model-name">Qwen 3</h3>
+                    <p class="model-tagline">Thinking Mode & 다국어 지원</p>
+
+                    <div class="model-stats">
+                        <div class="stat">
+                            <span class="stat-value">235B</span>
+                            <span class="stat-label">전체 파라미터</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">22B</span>
+                            <span class="stat-label">활성 파라미터</span>
+                        </div>
+                    </div>
+
+                    <div class="model-features">
+                        <span class="feature">think=true</span>
+                        <span class="feature">128k 컨텍스트</span>
+                        <span class="feature">한국어 지원</span>
+                    </div>
+                    <div class="model-badge apache">Apache 2.0</div>
+                </div>
+
+                <!-- Mistral -->
+                <div class="model-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="model-header mistral">
+                        <span class="model-company">Mistral AI (프랑스)</span>
+                    </div>
+                    <h3 class="model-name">Mistral Large 3</h3>
+                    <p class="model-tagline">기업용 RAG & 명령어 이행</p>
+
+                    <div class="model-stats">
+                        <div class="stat">
+                            <span class="stat-value">123B</span>
+                            <span class="stat-label">파라미터</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">128k</span>
+                            <span class="stat-label">컨텍스트</span>
+                        </div>
+                    </div>
+
+                    <div class="model-features">
+                        <span class="feature">Magistral 라인업</span>
+                        <span class="feature">EU 규제 준수</span>
+                        <span class="feature">Fine-tuning 최적화</span>
+                    </div>
+                    <div class="model-badge">연구/상업용 구분</div>
+                </div>
+            </div>
+
+            <!-- Comparison Table -->
+            <div class="comparison-table-wrapper" data-aos="fade-up">
+                <h3 class="table-title">모델 성능 비교표</h3>
+                <div class="table-scroll">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>모델명</th>
+                                <th>활성 파라미터</th>
+                                <th>컨텍스트</th>
+                                <th>GPQA (추론)</th>
+                                <th>코딩 성능</th>
+                                <th>라이선스</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Llama 4 Maverick</strong></td>
+                                <td>17B (400B)</td>
+                                <td>1,000,000</td>
+                                <td class="highlight-cell">80.5%</td>
+                                <td>43.4%</td>
+                                <td>커뮤니티</td>
+                            </tr>
+                            <tr>
+                                <td><strong>DeepSeek-R1</strong></td>
+                                <td>37B (671B)</td>
+                                <td>128,000</td>
+                                <td>79.8%</td>
+                                <td class="highlight-cell">64.3%</td>
+                                <td>MIT</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Qwen 3</strong></td>
+                                <td>22B (235B)</td>
+                                <td>128,000+</td>
+                                <td>최상위권</td>
+                                <td>최상위권</td>
+                                <td>Apache 2.0</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mistral Large 3</strong></td>
+                                <td>~123B</td>
+                                <td>128,000</td>
+                                <td>경쟁력</td>
+                                <td>높음</td>
+                                <td>연구/상업</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Gemma 3 27B</strong></td>
+                                <td>27B (Dense)</td>
+                                <td>128,000</td>
+                                <td>59.1%</td>
+                                <td>29.7%</td>
+                                <td>Gemma</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infrastructure Section -->
+    <section id="infrastructure" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Infrastructure</span>
+                <h2 class="section-title">인퍼런스 인프라 & 하드웨어 최적화</h2>
+            </div>
+
+            <div class="infra-grid">
+                <!-- Hardware -->
+                <div class="infra-card" data-aos="fade-right">
+                    <div class="infra-icon">🎮</div>
+                    <h3>RTX 5090 로컬 인퍼런스</h3>
+                    <div class="specs">
+                        <div class="spec-item">
+                            <span class="spec-label">VRAM</span>
+                            <span class="spec-value">32GB GDDR7</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">대역폭</span>
+                            <span class="spec-value">1.8 TB/s</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">성능 향상</span>
+                            <span class="spec-value">4090 대비 2배</span>
+                        </div>
+                    </div>
+                    <div class="highlight-box">
+                        <p><strong>듀얼 RTX 5090</strong> = 단일 H100 성능</p>
+                        <p>비용은 <strong>1/4 수준</strong></p>
+                    </div>
+                </div>
+
+                <!-- vLLM -->
+                <div class="infra-card" data-aos="fade-left">
+                    <div class="infra-icon">⚡</div>
+                    <h3>vLLM 추론 엔진</h3>
+                    <p class="infra-desc">오픈소스 모델 서빙의 사실상 표준</p>
+
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <h4>Chunked Prefill</h4>
+                            <p>긴 문서 입력 시 병목 해결, GPU 유휴 최소화</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>PagedAttention</h4>
+                            <p>KV 캐시 메모리 최적화, 동시 접속 2~4배 증가</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Auto Prefix Caching</h4>
+                            <p>시스템 프롬프트 자동 캐싱, 반복 연산 제거</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quantization -->
+            <div class="quantization-section" data-aos="fade-up">
+                <h3>양자화 기술의 성숙</h3>
+                <div class="quant-cards">
+                    <div class="quant-card">
+                        <h4>QLoRA</h4>
+                        <p>4비트 양자화 + 어댑터 학습</p>
+                        <span class="quant-benefit">소비자 GPU로 70B 튜닝 가능</span>
+                    </div>
+                    <div class="quant-card">
+                        <h4>FP8</h4>
+                        <p>8-bit Floating Point 연산</p>
+                        <span class="quant-benefit">속도 2배 ↑ 메모리 50% ↓</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agentic AI Section -->
+    <section id="agentic" class="section section-gradient">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Agentic AI</span>
+                <h2 class="section-title">에이전틱 AI & 차세대 RAG</h2>
+                <p class="section-desc">스스로 계획하고 도구를 사용하여 과업을 수행하는 AI로의 진화</p>
+            </div>
+
+            <!-- RAG Evolution -->
+            <div class="rag-evolution" data-aos="fade-up">
+                <div class="rag-card naive">
+                    <h3>Naive RAG</h3>
+                    <p>질문 → 유사 문서 검색 → 문맥 삽입</p>
+                    <div class="limitations">
+                        <span class="limit-tag">전체적 질문 취약</span>
+                        <span class="limit-tag">다단계 추론 불가</span>
+                    </div>
+                </div>
+                <div class="rag-arrow">
+                    <span>Evolution</span>
+                </div>
+                <div class="rag-card agentic">
+                    <h3>Agentic RAG</h3>
+                    <p>LLM에게 계획(Planning) 능력 부여</p>
+                    <div class="capabilities">
+                        <span class="cap-tag">DB 검색</span>
+                        <span class="cap-tag">웹 검색</span>
+                        <span class="cap-tag">계산기</span>
+                        <span class="cap-tag">자동 재시도</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GraphRAG vs LightRAG -->
+            <div class="rag-comparison" data-aos="fade-up">
+                <h3 class="comparison-title">지식 구조 혁신</h3>
+                <div class="rag-vs">
+                    <div class="rag-option">
+                        <h4>GraphRAG <span class="company-tag">Microsoft</span></h4>
+                        <ul>
+                            <li>거대 지식 그래프 구축</li>
+                            <li>문서 간 숨겨진 연결 파악</li>
+                            <li class="con">높은 구축 비용</li>
+                            <li class="con">업데이트 어려움</li>
+                        </ul>
+                    </div>
+                    <div class="vs-badge">VS</div>
+                    <div class="rag-option recommended">
+                        <div class="recommended-badge">권장</div>
+                        <h4>LightRAG <span class="company-tag">HKU</span></h4>
+                        <ul>
+                            <li>이중 레벨 검색 시스템</li>
+                            <li>증분 업데이트 용이</li>
+                            <li class="pro">토큰 비용 절감</li>
+                            <li class="pro">높은 정확도 유지</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LangGraph -->
+            <div class="langgraph-section" data-aos="fade-up">
+                <h3>LangGraph 오케스트레이션</h3>
+                <p>순환(Cyclic) 구조로 자기 평가 및 재시도 루프 구현</p>
+                <div class="code-preview">
+                    <div class="code-header">
+                        <span class="code-dot"></span>
+                        <span class="code-dot"></span>
+                        <span class="code-dot"></span>
+                        <span class="code-title">agent_workflow.py</span>
+                    </div>
+                    <pre><code><span class="comment"># 1. 상태(State) 정의</span>
+<span class="keyword">class</span> <span class="class-name">AgentState</span>(TypedDict):
+    messages: List[BaseMessage]
+    next_action: str
+
+<span class="comment"># 2. 노드(Node) 생성</span>
+<span class="keyword">def</span> <span class="func-name">call_llm</span>(state: AgentState):
+    <span class="comment"># qwen2.5-coder 바인딩</span>
+    response = llm.invoke(state[<span class="string">"messages"</span>])
+    <span class="keyword">return</span> {<span class="string">"messages"</span>: [response]}
+
+<span class="comment"># 3. 그래프 구성</span>
+graph = StateGraph(AgentState)
+graph.add_node(<span class="string">"agent"</span>, call_llm)
+graph.add_node(<span class="string">"tools"</span>, execute_tools)
+graph.add_conditional_edges(<span class="string">"agent"</span>, should_use_tools)</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Governance Section -->
+    <section id="governance" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Governance</span>
+                <h2 class="section-title">AI 거버넌스 & 윤리적 배포</h2>
+                <p class="section-desc">EU AI Act 전면 시행 (2025년 8월~)</p>
+            </div>
+
+            <!-- Risk Classification -->
+            <div class="risk-pyramid" data-aos="fade-up">
+                <h3>EU AI Act 리스크 분류</h3>
+                <div class="pyramid">
+                    <div class="pyramid-level forbidden">
+                        <span class="level-name">금지된 AI</span>
+                        <span class="level-desc">잠재의식 조작, 실시간 원격 생체 인식</span>
+                    </div>
+                    <div class="pyramid-level high-risk">
+                        <span class="level-name">고위험 AI</span>
+                        <span class="level-desc">교육, 채용, 신용 평가 → 투명성, 인간 감독 의무</span>
+                    </div>
+                    <div class="pyramid-level gpai">
+                        <span class="level-name">범용 AI (GPAI)</span>
+                        <span class="level-desc">기술 문서 공개, 저작권 준수 요약 공개</span>
+                    </div>
+                    <div class="pyramid-level systemic">
+                        <span class="level-name">체계적 위험</span>
+                        <span class="level-desc">&gt;10²⁵ FLOPs → 레드팀 테스트, 사고 보고 의무</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- License Comparison -->
+            <div class="license-section" data-aos="fade-up">
+                <h3>라이선스 전략</h3>
+                <div class="license-cards">
+                    <div class="license-card open">
+                        <h4>OSI 정의 오픈소스</h4>
+                        <div class="license-models">
+                            <span>Qwen 3</span>
+                            <span>DeepSeek</span>
+                            <span>Mistral (소형)</span>
+                        </div>
+                        <ul>
+                            <li>✓ 상업적 이용 자유</li>
+                            <li>✓ 수정 및 재배포 가능</li>
+                            <li>✓ Apache 2.0 / MIT</li>
+                        </ul>
+                    </div>
+                    <div class="license-card community">
+                        <h4>커뮤니티 라이선스</h4>
+                        <div class="license-models">
+                            <span>Llama 4</span>
+                        </div>
+                        <ul>
+                            <li>⚠ MAU 7억 초과 시 별도 계약</li>
+                            <li>⚠ 타사 모델 학습 금지</li>
+                            <li>⚠ 대규모 플랫폼 법적 검토 필요</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Responsible AI Checklist -->
+            <div class="checklist-section" data-aos="fade-up">
+                <h3>책임감 있는 AI 체크리스트</h3>
+                <div class="checklist">
+                    <div class="check-item">
+                        <div class="check-icon">🎯</div>
+                        <div class="check-content">
+                            <h4>편향성 테스트</h4>
+                            <p>한국 문화적 맥락에서 편향 검증</p>
+                        </div>
+                    </div>
+                    <div class="check-item">
+                        <div class="check-icon">📝</div>
+                        <div class="check-content">
+                            <h4>설명 가능성</h4>
+                            <p>RAG 답변에 출처(Citation) 명시</p>
+                        </div>
+                    </div>
+                    <div class="check-item">
+                        <div class="check-icon">👤</div>
+                        <div class="check-content">
+                            <h4>Human-in-the-loop</h4>
+                            <p>고위험 결정에 인간 최종 검토</p>
+                        </div>
+                    </div>
+                    <div class="check-item">
+                        <div class="check-icon">🛡️</div>
+                        <div class="check-content">
+                            <h4>레드 티밍</h4>
+                            <p>프롬프트 인젝션, 탈옥 공격 방어 테스트</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">🤖</span>
+                    <span>AI OpenSource 2025</span>
+                </div>
+                <p class="footer-text">
+                    2025년 생성형 AI 오픈소스 생태계와 실무 활용 전략
+                </p>
+                <p class="footer-credit">
+                    기술적 민주화가 달성된 시대, 책임감 있는 AI 개발을 위하여
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
